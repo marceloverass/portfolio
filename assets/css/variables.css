@@ -1,15 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 :root {
     --header-height: 3rem;
     --font-semi: 600;
 }
 
 :root {
-    --first-color: #4070F4;
-    --second-color: #0E2431;
+    --first-color: #3E606F;
+    --second-color: #193441;
+    --third-color: #FCFFF5;
 }
 
 :root {
-    --body-font: 'Poppins', sans-serif;
+    --body-font: 'Barlow', sans-serif;
     --big-font-size: 2rem;
     --h2-font-size: 1.25rem;
     --normal-font-size: 0.938rem;

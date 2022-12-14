@@ -1,14 +1,58 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="assets/css/components/main-header.css">
+    <link rel="stylesheet" href="assets/css/components/main-principal.css">
+    <link rel="stylesheet" href="assets/css/bd-grid.css">
+    <link rel="stylesheet" href="assets/css/components/section-title.css">
+    <link rel="stylesheet" href="assets/css/variables.css">
+    <link rel="stylesheet" href="assets/css/reset.css">
     <title>Portfolio</title>
 </head>
 <body>
-    
+    <header class="main-header">
+        <nav class="nav bd-grid">
+            <div>
+                <a href="#" class="nav_logo">Marcelo</a>
+            </div>
+
+            <div class="nav_menu" id="nav-menu">
+                <ul class="nav_list">
+                    <li class="nav_item"><a href="#" class="nav_link active">Home</a></li>
+                    <li class="nav_item"><a href="#" class="nav_link">About</a></li>
+                    <li class="nav_item"><a href="#" class="nav_link">Skills</a></li>
+                    <li class="nav_item"><a href="#" class="nav_link">Projects</a></li>
+                    <li class="nav_item"><a href="#" class="nav_link">Contact me</a></li>
+                </ul>
+            </div>
+            
+            <div class="nav_toggle" id="nav-toggle">
+                <i class='bx bx-menu'></i>
+            </div>
+        </nav>
+    </header>
+
+    <main class="main-principal">
+        <section class="home bd-grid" id="home">
+            <div class="home_data">
+                <h1 class="home_title">Hi, <br>I'm <span class="home_title-color">Marcelo</span> <br> Front-End Developer<br></h1>
+                <a href="#" class="button">Contact</a>
+            </div>
+            <div class="home_social">
+                <a href="#" class="home_social-icon"><i class='bx bxl-linkedin'></i></a>
+                <a href="#" class="home_social-icon"><i class='bx bxl-github' ></i></a>
+            </div>
+
+            <div class="home_img">
+                <img src="assets/img/my-photo-1.png" alt="">
+            </div>
+        </section>
+    </main>
+
     <script src="https://unpkg.com/scrollreveal"></script>
     <script src="assets/js/main.js"></script>
 </body>
