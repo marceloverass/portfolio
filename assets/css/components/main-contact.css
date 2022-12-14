@@ -11,9 +11,10 @@
 
 .contact_button {
     display: block;
+    width: 100%;
     border: none;
     outline: none;
     font-size: var(--normal-font-size);
     cursor: pointer;
-    margin-left: auto;
+    margin-right: auto;
 }
