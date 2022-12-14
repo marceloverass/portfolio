@@ -5,12 +5,12 @@
 }
 
 .buttons-langWrap .langs {
-    font-family: 'Fira Code', sans-serif;
+    font-family: 'Barlow', sans-serif;
     text-transform: uppercase; 
     color: #fff;
     text-decoration: none;
     padding: 0 15px;
-    font-weight: bold;
+    font-weight: 500;
     background: #555656;
     font-size: 15px;
     cursor: pointer;

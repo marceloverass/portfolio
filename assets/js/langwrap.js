@@ -26,6 +26,6 @@ let data = {
     {
         "title": "Sobre",
         "description": 
-            "Hoje, prestes a me formar na universidade, estou à procura da minha primeira vaga como desenvolvedor Front-End. Tenho experiência como assistente administrativo em uma corretora de seguros, onde diariamente trabalhava com o pacote office e tinha como responsabilidade os gastos e entradas da empresa. Desde criança, sempre gostei de tecnologia e games, tive meu primeiro contato com programação na faculdade, com a linguagem C, a princípio tive dificuldades e não gostei pois tinha como sonho me tornar profissional do jogo Counter-Strike, mas após um tempo conheci o JavaScript através do canal no youtube Curso em Vídeo e fiquei admirado com a possibilidade de coisas que eu poderia criar."
+            "Hoje, prestes a me formar na universidade, estou à procura da minha primeira vaga como desenvolvedor Front-End. Tenho experiência como assistente administrativo em uma corretora de seguros, onde diariamente trabalhava com o pacote office e tinha como responsabilidade os gastos e entradas da empresa. Desde criança, sempre gostei de tecnologia e games, tive meu primeiro contato com programação na faculdade, com a linguagem C, a princípio tive dificuldades e não gostei pois tinha como sonho me tornar jogador profissional de Counter-Strike, mas após um tempo conheci o JavaScript através do canal do youtube Curso em Vídeo e fiquei admirado com a possibilidade de coisas que eu poderia criar."
     }
 }

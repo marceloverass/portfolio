@@ -16,3 +16,7 @@
     width: 200px;
     border-radius: .5rem;
 }
+
+.about_text {
+    margin-bottom: var(--mb-6);
+}
