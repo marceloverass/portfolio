@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,7 +7,9 @@
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="assets/css/components/main-header.css">
     <link rel="stylesheet" href="assets/css/components/main-home.css">
-    <link rel="stylesheet" href="assets/css/main-button.css">
+    <link rel="stylesheet" href="assets/css/components/main-about.css">
+    <link rel="stylesheet" href="assets/css/components/main-button.css">
+    <link rel="stylesheet" href="assets/css/components/buttons-langWrap.css">
     <link rel="stylesheet" href="assets/css/components/section-title.css">
     <link rel="stylesheet" href="assets/css/variables.css">
     <link rel="stylesheet" href="assets/css/reset.css">
@@ -48,12 +50,33 @@
             </div>
 
             <div class="home_img">
-                <img src="assets/img/my-photo-1.png" alt="">
+                <img src="assets/img/my-photo-1.png" alt="Marcelo photo red background">
+            </div>
+        </section>
+
+        <section class="main-about" id="about">
+            <h2 class="section-title -langChange">About</h2>
+
+            <div class="about_container bd-grid">
+                <div class="about_img">
+                    <img src="assets/img/my-photo-2.jpeg" alt="Marcelo photo">
+                </div>
+
+                <div>
+                    <h2 class="about_subtitle">I'm Marcelo</h2>
+                    <div class="buttons-langWrap">
+                        <a language="english" class="langs active">EN</a>
+                        <a language="portuguese" class="langs">PT-BR</a>
+                    </div>
+
+                    <p class="main-description about_text">Today, I'm almost to graduate from university, I'm looking for my first job as a Front-End Developer. I have experience as an administrative assistant at an insurance brokerage, where I worked daily with the office pack and was responsible for the company's expenses and profits. Since I was a child, I always liked technology and games, I had my first contact with programming in college, with the C language, at first I had difficulties and I didn't like it because my dream was to become a professional in the Counter-Strike game, but after a while I met JavaScript through the youtube channel <a>Curso em Vídeo</a> and I was amazed at the possibilities of things I could create.</p>
+                </div>
             </div>
         </section>
     </main>
 
     <script src="https://unpkg.com/scrollreveal"></script>
     <script src="assets/js/main.js"></script>
+    <script src="assets/js/langwrap.js"></script>
 </body>
 </html>

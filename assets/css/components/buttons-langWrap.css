@@ -1,0 +1,21 @@
+.buttons-langWrap {
+    text-align: center;
+    align-items: center;
+    margin: 30px 0 30px 0;
+}
+
+.buttons-langWrap .langs {
+    font-family: 'Fira Code', sans-serif;
+    text-transform: uppercase; 
+    color: #fff;
+    text-decoration: none;
+    padding: 0 15px;
+    font-weight: bold;
+    background: #555656;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.langs.active {
+    background-color: #f2162b;
+}
