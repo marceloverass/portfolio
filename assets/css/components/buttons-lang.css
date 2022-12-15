@@ -1,0 +1,22 @@
+.langs{
+    
+    text-align: center;
+    padding: 12px 24px;
+    border-radius: .5rem;
+}
+.link__lang {
+    color: var(--second-color);
+    text-decoration: none;
+    padding: 5px;
+    font-weight: 650;
+    transition: .3s linear;
+}
+
+.link__lang:hover {
+    background: var(--second-color);
+    color: #FFF;
+}
+.link__lang.active__lang {
+    background: var(--second-color);
+    color: #FFF;
+}
