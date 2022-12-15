@@ -29,20 +29,8 @@ const sr = ScrollReveal ({
     reset: true
 })
 
-sr.reveal('.home_title', {})
-sr.reveal('.button', {delay: 200})
-sr.reveal('.home_img', {delay: 400})
-sr.reveal('.home_social-icon', {interval: 200})
 
-sr.reveal('.about_img', {})
-sr.reveal('.about_subtitle', {delay: 200})
-sr.reveal('.about_text', {delay: 400})
-
-sr.reveal('.skills_subtitle', {})
-sr.reveal('.skills_text', {delay: 200})
-sr.reveal('.skills_data', {interval: 200})
-sr.reveal('.skills_img', {delay: 400})
-
-sr.reveal('.project_img', {interval: 400})
-
-sr.reveal('.contact_input', {interval: 400})
+sr.reveal('.home__data, .about__img, .skills__subtitle, .skills__text',{}); 
+sr.reveal('.home__img, .about__subtitle, .about__text, .skills__img',{delay: 400}); 
+sr.reveal('.home__social-icon',{ interval: 200}); 
+sr.reveal('.skills__data, .project__img, .contact__input',{interval: 200}); 

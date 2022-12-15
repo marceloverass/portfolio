@@ -3,36 +3,36 @@
     row-gap: 1rem;
 }
 
-.home_data {
+.home__data {
     align-self: center;
 }
 
-.home_title {
+.home__title {
     font-size: var(--big-font-size);
     margin-bottom: var(--mb-5);
 }
 
-.home_title-color {
+.home__title-color {
     color: var(--first-color);
 }
 
-.home_social {
+.home__social {
     display: flex;
     flex-direction: column;
 }
 
-.home_social-icon {
+.home__social-icon {
     width: max-content;
     margin-bottom: var(--mb-2);
     font-size: 1.5rem;
     color: var(--second-color);
 }
 
-.home_social-icon:hover {
+.home__social-icon:hover {
     color: var(--first-color);
 }
 
-.home_img {
+.home__img {
     position: absolute;
     right: 0;
     bottom: 0;

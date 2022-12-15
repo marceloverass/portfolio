@@ -26,7 +26,7 @@
     font-weight: var(--font-semi);
 }
 @media screen and (max-width: 767px) {
-    .nav_menu {
+    .nav__menu {
         position: fixed;
         top: var(--header-height);
         right: -100%;
@@ -38,20 +38,20 @@
     }
 }
 
-.nav_item {
+.nav__item {
     margin-bottom: var(--mb-4);
 }
 
-.nav_link {
+.nav__link {
     position: relative;
     color: #FFF;
 }
 
-.nav_link:hover {
+.nav__link:hover {
     position: relative;
 }
 
-.nav_link:hover::after {
+.nav__link:hover::after {
     position: absolute;
     content: "";
     width: 100%;
@@ -61,11 +61,11 @@
     background-color: var(--first-color);
 }
 
-.nav_logo {
+.nav__logo {
     color: var(--second-color);
 }
 
-.nav_toggle {
+.nav__toggle {
     color: var(--second-color);
     font-size: 1.5rem;
     cursor: pointer;

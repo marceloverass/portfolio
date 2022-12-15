@@ -2,21 +2,21 @@
     text-align: center;
 }
 
-.projects_container {
+.projects__container {
     row-gap: 2rem;
 }
 
-.project_img {
+.project__img {
     box-shadow: 0 4px 25px rgba(14, 36, 49, .15);
     border-radius: .5rem;
     overflow: hidden;
 }
 
-.project_img img {
+.project__img img {
     transition: 1s;
     cursor: pointer;
 }
 
-.project_img img:hover {
+.project__img img:hover {
     transform: scale(1.1);
 }

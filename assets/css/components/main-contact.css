@@ -1,4 +1,4 @@
-.contact_input {
+.contact__input {
     width: 100%;
     font-size: var(--normal-font-size);
     font-weight: var(--font-semi);
@@ -9,7 +9,7 @@
     margin-bottom: var(--mb-4);
 }
 
-.contact_button {
+.contact__button {
     display: block;
     width: 100%;
     border: none;
