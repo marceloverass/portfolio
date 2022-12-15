@@ -10,7 +10,7 @@ const showMenu = (toggleId, navId)=>{
 }
 showMenu('nav-toggle', 'nav-menu');
 
-const navLink = document.querySelectorAll('.nav_link');
+const navLink = document.querySelectorAll('.nav__link');
 
 function linkAction() {
     navLink.forEach(n => n.classList.remove('active'));
