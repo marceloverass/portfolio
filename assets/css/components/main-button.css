@@ -3,7 +3,9 @@
     background-color: var(--first-color);
     color: #FFF;
     padding: .75rem 2.5rem;
+    font-weight: var(--font-semi);
     border-radius: .5rem;
+    transition: .3s;
 }
 
 .button:hover {

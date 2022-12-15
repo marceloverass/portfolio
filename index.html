@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="assets/css/components/main-projects.css">
     <link rel="stylesheet" href="assets/css/components/main-contact.css">
     <link rel="stylesheet" href="assets/css/components/main-footer.css">
+    <link rel="stylesheet" href="assets/css/components/media-queries.css">
     <link rel="stylesheet" href="assets/css/components/main-button.css">
     <link rel="stylesheet" href="assets/css/components/buttons-langWrap.css">
     <link rel="stylesheet" href="assets/css/components/section-title.css">
@@ -28,11 +29,11 @@
 
             <div class="nav_menu" id="nav-menu">
                 <ul class="nav_list">
-                    <li class="nav_item"><a href="#" class="nav_link active">Home</a></li>
-                    <li class="nav_item"><a href="#" class="nav_link">About</a></li>
-                    <li class="nav_item"><a href="#" class="nav_link">Skills</a></li>
-                    <li class="nav_item"><a href="#" class="nav_link">Projects</a></li>
-                    <li class="nav_item"><a href="#" class="nav_link">Contact me</a></li>
+                    <li class="nav_item"><a href="#home" class="nav_link active">Home</a></li>
+                    <li class="nav_item"><a href="#about" class="nav_link">About</a></li>
+                    <li class="nav_item"><a href="#skills" class="nav_link">Skills</a></li>
+                    <li class="nav_item"><a href="#projects" class="nav_link">Projects</a></li>
+                    <li class="nav_item"><a href="#contact" class="nav_link">Contact me</a></li>
                 </ul>
             </div>
             
@@ -43,12 +44,12 @@
     </header>
 
     <main class="main-principal">
-        <section class="home bd-grid" id="home">
+        <section class="home bd-grid section" id="home">
             <div class="home_data">
                 <h1 class="home_title">Hi, <br>I'm <span class="home_title-color">Marcelo</span> <br> Front-End Developer<br></h1>
                 <a href="#" class="button">Contact me</a>
             </div>
-            <div class="home_social">
+            <div class="home_social section">
                 <a href="#" class="home_social-icon"><i class='bx bxl-linkedin'></i></a>
                 <a href="#" class="home_social-icon"><i class='bx bxl-github'></i></a>
                 <a href="#" class="home_social-icon"><i class='bx bxl-whatsapp'></i></a>
@@ -59,27 +60,18 @@
             </div>
         </section>
 
-        <section class="main-about" id="about">
+        <section class="main-about section" id="about">
             <h2 class="section-title -langChange">About</h2>
 
             <div class="about_container bd-grid">
                 <div class="about_img">
                     <img src="assets/img/my-photo-2.jpeg" alt="Marcelo photo">
                 </div>
-
-                <div>
-                    <h2 class="about_subtitle">I'm Marcelo</h2>
-                    <div class="buttons-langWrap">
-                        <a language="english" class="langs active">EN</a>
-                        <a language="portuguese" class="langs">PT-BR</a>
-                    </div>
-
                     <p class="main-description about_text">Today, I'm almost to graduate from university, I'm looking for my first job as a Front-End Developer. I have experience as an administrative assistant at an insurance brokerage, where I worked daily with the office pack and was responsible for the company's expenses and profits. Since I was a child, I always liked technology and games, I had my first contact with programming in college, with the C language, at first I had difficulties and I didn't like it because my dream was to become a professional player of the game Counter-Strike, but after a while I met JavaScript through the youtube channel <a>Curso em Vídeo</a> and I was amazed at the possibilities of things I could create.</p>
-                </div>
             </div>
         </section>
 
-        <section class="main-skills" id="skills">
+        <section class="main-skills section" id="skills">
             <h2 class="section-title">Skills</h2>
 
             <div class="skills_container bd-grid">
@@ -155,14 +147,29 @@
             </div>
         </section>
         
-            <section class="main-projects section" id="projects">
-                <h2 class="section-title">Projects</h2>
-                <div class="projects_container bd-grid">
-                    <div class="project_img">
-                        <img src="assets/img/my-photo-2.jpeg" alt="Photo of my portfolio">
-                    </div>
+        <section class="main-projects section" id="projects">
+            <h2 class="section-title">Projects</h2>
+            <div class="projects_container bd-grid">
+                <div class="project_img">
+                    <img src="assets/img/my-photo-2.jpeg" alt="Photo of my portfolio">
                 </div>
-            </section>
+                <div class="project_img">
+                    <img src="assets/img/projects.webp" alt="Photo of my portfolio">
+                </div>
+                <div class="project_img">
+                    <img src="assets/img/projects.webp" alt="Photo of my portfolio">
+                </div>
+                <div class="project_img">
+                    <img src="assets/img/projects.webp" alt="Photo of my portfolio">
+                </div>
+                <div class="project_img">
+                    <img src="assets/img/projects.webp" alt="Photo of my portfolio">
+                </div>
+                <div class="project_img">
+                    <img src="assets/img/projects.webp" alt="Photo of my portfolio">
+                </div>
+            </div>
+        </section>
 
             <section class="main-contact section" id="contact">
                 <h2 class="section-title">Contact me</h2>

@@ -17,6 +17,6 @@
     cursor: pointer;
 }
 
-.projects_img img:hover {
+.project_img img:hover {
     transform: scale(1.1);
 }

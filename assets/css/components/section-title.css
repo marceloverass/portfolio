@@ -9,12 +9,12 @@
 
 .section-title::after {
     position: absolute;
-    content: "";
+    content: '';
     width: 64px;
     height: 0.18rem;
     left: 0;
     right: 0;
-    margin: auto;
+    margin: 10px auto;
     top: 2rem;
     background-color: var(--first-color);
 }
