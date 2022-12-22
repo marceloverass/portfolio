@@ -20,3 +20,7 @@
 .project__img img:hover {
     transform: scale(1.1);
 }
+
+.calculator__img {
+    margin-top: 50px;
+}
