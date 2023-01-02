@@ -14,9 +14,9 @@ class Form {
 }
 
 $usuario = new Form;
-$resnome = $usuario -> cadastrarNome($_POST['nome']);
-$resemail = $usuario -> cadastrarEmail($_POST['email']);
-$resmensagem = $usuario -> cadastrarMensagem($_POST['mensagem']);
+$resnome = $usuario -> cadastrarNome($_GET['nome']);
+$resemail = $usuario -> cadastrarEmail($_GET['email']);
+$resmensagem = $usuario -> cadastrarMensagem($_GET['mensagem']);
 
 include("conexao.php");
     $sql = "INSERT INTO usuario(nome, email, mensagem) VALUES ('$resnome', '$resemail', '$resmessage')";
