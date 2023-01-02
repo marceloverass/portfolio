@@ -19,7 +19,7 @@ $resemail = $usuario -> cadastrarEmail($_GET['email']);
 $resmensagem = $usuario -> cadastrarMensagem($_GET['mensagem']);
 
 include("conexao.php");
-    $sql = "INSERT INTO usuario(nome, email, mensagem) VALUES ('$resnome', '$resemail', '$resmessage')";
+    $sql = "INSERT INTO usuario(nome, email, mensagem) VALUES ('$resnome', '$resemail', '$resmensagem')";
 
 if(mysqli_query($conexao, $sql)){
         echo "Usuário cadastrado com sucesso <br><br>";
