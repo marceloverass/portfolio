@@ -85,3 +85,18 @@
         right: 10%;
     }
 }
+
+@media screen and (min-width: 769px) {
+    .langs {
+        margin-left: 550px;
+    }
+}
+
+@media screen and (max-width: 769px) {
+    
+    .projects__container {
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(6, 1fr);
+        column-gap: 2rem;
+    }
+}
