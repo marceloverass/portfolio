@@ -28,7 +28,7 @@
     transform: translate(-50%, -50%);
 }
 .project__img, .calculator__img {
-    transition: 0.5s;
+    transition: 0.2s;
     cursor: pointer;
 }
 .project__img .calculator__img:hover {
@@ -42,8 +42,10 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    transition: 0.2s;
+    cursor: pointer;
 }
 
 .project__img .loading__img:hover {
-    
+    width: 160px;
 }
