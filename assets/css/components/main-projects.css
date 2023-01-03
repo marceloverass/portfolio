@@ -12,15 +12,38 @@
     overflow: hidden;
 }
 
-.project__img img {
+.project__img, .portfolio__img {
     transition: 1s;
     cursor: pointer;
 }
-
-.project__img img:hover {
+.project__img .portfolio__img:hover {
     transform: scale(1.1);
 }
 
-.calculator__img {
-    margin-top: 50px;
+.project__img .calculator__img {
+    width: 150px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.project__img, .calculator__img {
+    transition: 0.5s;
+    cursor: pointer;
+}
+.project__img .calculator__img:hover {
+    width: 160px;
+}
+
+
+.project__img .loading__img {
+    width: 150px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.project__img .loading__img:hover {
+    
 }
