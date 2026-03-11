@@ -1,0 +1,41 @@
+site_name: Marcelo Veras
+site_url: https://marceloverass.github.io/portfolio/
+
+theme:
+  name: material
+  language: pt-BR
+  favicon: assets/favicon.png  # Certifique-se de ter um ícone 32x32 na pasta assets
+  logo: assets/3x4e.png        # Pode usar sua própria foto como logo no header
+  palette: 
+    - scheme: default           # Modo claro
+      primary: indigo           # Cor do header (combina com o BRB)
+      accent: blue
+    - scheme: slate             # Adiciona opção de modo escuro para o usuário
+      primary: indigo
+      accent: blue
+  features:
+    - navigation.tabs           # Header mais limpo com abas horizontais
+    - navigation.sections
+    - navigation.top            # Botão "voltar ao topo" automático
+    - search.suggest
+    - search.highlight
+
+nav:
+  - Home: index.md
+  - Projetos:
+      - 📊 BI & Dashboards: 
+          - Desenrola Brasil: projetos/desenrola-brasil.md
+      - 🐍 Python & Automação:
+          - Relatório Gerencial Auto: projetos/relatorio-gerencial.md
+          - Meu Querido Diário: projetos/meu-querido-diario.md
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/marceloverass
+    - icon: fontawesome/brands/linkedin
+      link: https://linkedin.com/in/marceloveras
+    - icon: fontawesome/regular/envelope
+      link: mailto:marceloantonino.verass@gmail.com
+
+copyright: Copyright &copy; 2026 Marcelo Veras
