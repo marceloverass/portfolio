@@ -56,7 +56,7 @@ A automação não apenas otimizou o tempo, mas elevou drasticamente o padrão d
     <h3 style="color: #d32f2f;">❌ Processo Manual (Antes)</h3>
     <p style="font-size: 0.9em; color: #666; min-height: 60px;">Consolidação lenta em planilhas, formatação manual de tabelas e redação de textos repetitivos suscetíveis a erros.</p>
     <a href="https://www.funprespjud.com.br/wp-content/uploads/2026/03/gearc_01_2026.pdf" target="_blank">
-      <img src="../assets/relatorio/relatorio-antes.png" alt="Exemplo do relatório manual desformatado" style="border: 2px solid #ddd; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); width: 100%; height: auto; object-fit: cover;">
+      <img src="/portfolio/assets/relatorio/relatorio-antes.png" alt="Exemplo do relatório manual desformatado" style="border: 2px solid #ddd; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); width: 100%; height: auto; object-fit: cover;">
     </a>
   </div>
 
@@ -64,7 +64,7 @@ A automação não apenas otimizou o tempo, mas elevou drasticamente o padrão d
     <h3 style="color: #388e3c;">✅ Solução Automatizada (Depois)</h3>
     <p style="font-size: 0.9em; color: #666; min-height: 60px;">Documento oficial (.docx/.pdf) gerado em minutos via Python, com gráficos dinâmicos, textos redigidos automaticamente e layout padronizado.</p>
     <a href="https://www.funprespjud.com.br/wp-content/uploads/2025/12/gearc_12_2025.pdf" target="_blank">
-      <img src="../assets/relatorio/relatorio-depois.png" alt="Exemplo do relatório final profissional gerado pelo Python" style="border: 2px solid #ddd; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); width: 100%; height: auto; object-fit: cover;">
+      <img src="/portfolio/assets/relatorio/relatorio-depois.png" alt="Exemplo do relatório final profissional gerado pelo Python" style="border: 2px solid #ddd; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); width: 100%; height: auto; object-fit: cover;">
     </a>
   </div>
 </div>

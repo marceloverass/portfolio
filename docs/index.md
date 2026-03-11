@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="assets/3x4e.PNG" width="150px" style="border-radius: 50%; border: 2px solid #3f51b5;">
+  <img src="/portfolio/assets/3x4e.png" width="150px" style="border-radius: 50%; border: 2px solid #3f51b5;">
   <h1>Olá, eu sou o Marcelo 👋</h1>
 </div>
 

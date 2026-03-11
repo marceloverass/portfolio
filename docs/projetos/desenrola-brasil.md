@@ -40,7 +40,7 @@ Para garantir a precisão da análise, superei desafios técnicos críticos na b
 A eficiência do dashboard é garantida por uma modelagem em **Star Schema**, separando claramente as dimensões da tabela fato. Isso permite uma performance otimizada e cálculos DAX mais robustos.
 
 <div align="center">
-  <img src="../assets/desenrola-brasil/modelagem.png" alt="Modelagem de Dados Star Schema" style="border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); width: 80%;">
+  <img src="/portfolio/assets/desenrola-brasil/modelagem.png" alt="Modelagem de Dados Star Schema" style="border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); width: 80%;">
 </div>
 
 ### Componentes do Modelo:
@@ -57,14 +57,14 @@ Aqui estão as quatro visões principais desenvolvidas para o banco:
 
 ### Visão Geral e Perfil
 <div style="margin-bottom: 15px;">
-  <img src="../assets/desenrola-brasil/visao-geral.png" style="width: 90%; border-radius: 5px; border: 1px solid #ddd;">
-  <img src="../assets/desenrola-brasil/perfil-devedores.png" style="width: 90%; border-radius: 5px; border: 1px solid #ddd;">
+  <img src="/portfolio/assets/desenrola-brasil/visao-geral.png" style="width: 90%; border-radius: 5px; border: 1px solid #ddd;">
+  <img src="/portfolio/assets/desenrola-brasil/perfil-devedores.png" style="width: 90%; border-radius: 5px; border: 1px solid #ddd;">
 </div>
 
 ### Análise Regional e Insights Avançados
 <div style="margin-bottom: 15px;">
-  <img src="../assets/desenrola-brasil/analise-regional.png" style="width: 90%; border-radius: 5px; border: 1px solid #ddd;">
-  <img src="../assets/desenrola-brasil/insights-avancados.png" style="width: 90%; border-radius: 5px; border: 1px solid #ddd;">
+  <img src="/portfolio/assets/desenrola-brasil/analise-regional.png" style="width: 90%; border-radius: 5px; border: 1px solid #ddd;">
+  <img src="/portfolio/assets/desenrola-brasil/insights-avancados.png" style="width: 90%; border-radius: 5px; border: 1px solid #ddd;">
 </div>
 
 ---
