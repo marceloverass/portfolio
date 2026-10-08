@@ -2,18 +2,30 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>https://marceloverass.github.io/portfolio/</loc>
-         <lastmod>2026-03-11</lastmod>
+         <lastmod>2026-10-08</lastmod>
     </url>
     <url>
          <loc>https://marceloverass.github.io/portfolio/projetos/desenrola-brasil/</loc>
-         <lastmod>2026-03-11</lastmod>
+         <lastmod>2026-10-08</lastmod>
+    </url>
+    <url>
+         <loc>https://marceloverass.github.io/portfolio/projetos/devops-deploy/</loc>
+         <lastmod>2026-10-08</lastmod>
     </url>
     <url>
          <loc>https://marceloverass.github.io/portfolio/projetos/meu-querido-diario/</loc>
-         <lastmod>2026-03-11</lastmod>
+         <lastmod>2026-10-08</lastmod>
+    </url>
+    <url>
+         <loc>https://marceloverass.github.io/portfolio/projetos/nupec-360/</loc>
+         <lastmod>2026-10-08</lastmod>
+    </url>
+    <url>
+         <loc>https://marceloverass.github.io/portfolio/projetos/portal-gti/</loc>
+         <lastmod>2026-10-08</lastmod>
     </url>
     <url>
          <loc>https://marceloverass.github.io/portfolio/projetos/relatorio-gerencial/</loc>
-         <lastmod>2026-03-11</lastmod>
+         <lastmod>2026-10-08</lastmod>
     </url>
 </urlset>

@@ -1,82 +1,77 @@
-<a href="https://gearc.github.io/Meu-Querido-Diario-Docs/" target="_blank" style="display: flex; justify-content: center; align-items: center;">
-    ![Logo](../assets/mqd/logo.png)
-</a>
+# Meu Querido Diário — Monitoramento do DOU
 
-**Meu Querido Diário** é uma aplicação desenvolvida no âmbito da **Gerência de Cadastro e Arrecadação (GEARC)** da **FUNPRESP-JUD**, com o objetivo de automatizar o monitoramento de movimentações funcionais de servidores públicos publicadas no **Diário Oficial da União (DOU)**.
+<div class="hero-badges" style="margin-bottom: 20px;">
+  <span class="tech-tag">Funpresp-Jud</span>
+  <span class="tech-tag">Automação & Engenharia</span>
+  <span class="tech-tag">Python</span>
+  <span class="tech-tag">Selenium</span>
+  <span class="tech-tag">Pandas</span>
+</div>
 
-Essa ferramenta visa ampliar a eficiência e a precisão no acompanhamento de nomeações, vacâncias, cessões, redistribuições e demais atos administrativos relevantes ao regime de previdência dos servidores vinculados à Fundação.
+<div align="center" style="margin-bottom: 24px;">
+  <a href="https://gearc.github.io/Meu-Querido-Diario-Docs/" target="_blank" rel="noopener">
+    <img src="../../assets/mqd/logo.png" class="no-zoom" alt="Meu Querido Diário - Logo" style="max-height: 52px; max-width: 100%; object-fit: contain;">
+  </a>
+</div>
 
-[Link para a documentação completa](https://gearc.github.io/Meu-Querido-Diario-Docs/)
+**Meu Querido Diário** é uma aplicação desenvolvida no âmbito da Gerência de Cadastro e Arrecadação (GEARC) da **Funpresp-Jud**, com o objetivo de automatizar o monitoramento contínuo de movimentações funcionais de servidores públicos federais publicadas no **Diário Oficial da União (DOU)**.
 
----
+A ferramenta otimiza o acompanhamento de atos administrativos essenciais para a previdência complementar dos servidores vinculados ao Poder Judiciário da União, tais como nomeações, vacâncias, cessões, redistribuições e aposentadorias.
 
-## 🧠 Propósito
-
-O projeto surgiu da necessidade de substituir processos manuais e suscetíveis a erros por uma solução automatizada, capaz de realizar varreduras diárias no DOU, extrair e interpretar as informações relevantes, além de disponibilizá-las de forma estruturada para a equipe responsável.
-
----
-
-## ⚙️ Como Funciona
-
-A rotina de execução do sistema é realizada automaticamente em dias úteis e segue os seguintes passos principais:
-
-1. **Coleta dos Dados:**
-   A aplicação acessa o [site do DOU](https://www.in.gov.br/leiturajornal) para capturar os links de todas as publicações do dia anterior. Cada link é acessado individualmente e seu conteúdo HTML é extraído.
-
-2. **Leitura com IA:**
-   O conteúdo das postagens é interpretado utilizando um modelo de linguagem por meio do [G4F (GPT4Free)](https://github.com/xtekky/gpt4free), que retorna um JSON estruturado com os dados extraídos.
-
-3. **Extração e Estruturação:**
-   As informações do JSON são processadas e inseridas em um dataframe, garantindo padronização, clareza e integridade dos dados.
-
-4. **Armazenamento:**
-   Os dados são registrados no banco de dados da Fundação, ficando disponíveis para análise e ações internas.
-
-5. **Notificações de Erro:**
-   Em caso de falhas no processo (como indisponibilidade do site, falhas de leitura ou conexão), um e-mail automático é enviado ao gerente responsável, contendo os detalhes do erro ocorrido.
+<div align="center" style="margin: 16px 0 24px 0;">
+  <a href="https://gearc.github.io/Meu-Querido-Diario-Docs/" target="_blank" rel="noopener" class="report-btn report-btn--secondary" style="display: inline-flex; width: auto; padding: 8px 18px;">
+    Consultar documentação técnica completa &nearr;
+  </a>
+</div>
 
 ---
 
-## 🔍 Detalhamento
+## Propósito
 
-Este site contém páginas dedicadas a explicar cada componente da aplicação com mais profundidade, incluindo:
-
-* Coleta de dados no DOU
-* Leitura automatizada com IA
-* Tratamento de erros e notificações
-* Estrutura dos dados salvos no banco
-* Casos de uso reais e aplicações práticas
+Substituir a checagem manual e amostral de atos no DOU por uma rotina automatizada, capaz de varrer diariamente as publicações oficiais, extrair entidades relevantes, estruturar os dados e alertar a equipe técnica sobre alterações de cadastro.
 
 ---
 
-## 👨‍💻 Público-Alvo
+## Fluxo Operacional
 
-O sistema é destinado aos colaboradores da FUNPRESP-JUD, especialmente à equipe da GEARC, mas também pode ser útil a outras áreas interessadas no acompanhamento sistematizado das publicações no DOU.
+A execução da rotina ocorre de forma agendada em dias úteis, seguindo as seguintes etapas:
 
----
-
-## 🧩 Tecnologias Utilizadas
-
-* **Python**
-* **Selenium**
-* **Pandas**
-* **G4F (GPT4Free)**
-* **MkDocs**
-* **SMTP para envio de e-mails**
-* **Banco de dados SQL Server**
+1. **Coleta de Publicações:** O módulo faz o rastreamento no [portal da Imprensa Nacional (DOU)](https://www.in.gov.br/leiturajornal), identificando todas as matérias cadastradas da edição diária e extraindo o código HTML bruto de cada ato.
+2. **Processamento e Extração Textual:** O texto dos atos administrativos passa por rotinas de processamento de linguagem natural e extração semântica com suporte a LLMs para identificar servidores, cargos, órgãos de origem/destino e enquadramento funcional em JSON estruturado.
+3. **Tratamento e Validação:** Os dados estruturados são normalizados em dataframes com validação de tipos, formatação de datas e tratamento de homônimos.
+4. **Carga em Banco de Dados:** As informações sanitizadas são persistidas em tabelas relacionais no banco corporativo da fundação para consumo operacional.
+5. **Monitoramento e Alertas:** Em caso de exceções operacionais (indisponibilidade temporária do portal ou instabilidades de rede), o sistema emite relatórios de erro automáticos para a equipe de suporte.
 
 ---
 
-## Desenvolvedores do Projeto
+## Stack Tecnológica
 
-| Nome              | Função                              | Perfil no Github                        | Perfil do LinkedIn |
-|-------------------|-------------------------------------|-----------------------------------------|----------------------------------------|
-| Giovani Rocha     | Supervisor do Projeto / Gerente     | --                                      |[Giovani Rocha](https://br.linkedin.com/in/giovani-alves-da-rocha-4ab34b25)|
-| André Machado     | Supervisor do Projeto / Supervisor  | --                                      |[André Machado](https://www.linkedin.com/in/andr%C3%A9-carvalho-machado-10b40068/?originalSubdomain=br)|
-| Marcos Marinho    | Desenvolvedor / Estagiário          | [devMarcosVM](https://github.com/devMarcosVM) |[Marcos Marinho](https://www.linkedin.com/in/marcos-vieira-marinho/?originalSubdomain=br) |
-| Marcelo Veras   | Desenvolvedor / Estagiário          | [marceloverass](https://github.com/marceloverass) |[Marcelo Veras](https://www.linkedin.com/in/marceloveras/?originalSubdomain=br)|
-| Gabriel Delmondes | Desenvolvedor / Estagiário          | [gabrieldelmondess](https://github.com/gabrieldelmondess) |[Gabriel Delmondes](https://www.linkedin.com/in/gabriel-%C3%A2ngelo-delmondes-de-lima-b91541219/?originalSubdomain=br)|
+* **Linguagem Principal:** Python.
+* **Automação Web e Coleta:** Selenium e Requests.
+* **Engenharia de Dados:** Pandas.
+* **Processamento de Linguagem:** G4F e integração com modelos de extração textual.
+* **Persistência:** SQL Server.
+* **Documentação Técnica:** MkDocs Material.
+* **Notificações:** SMTP / Python email service.
 
 ---
 
-[⬅️ Voltar para o Início](../index.md)
+## Aplicação e Usuários
+
+O sistema apoia as operações diárias da equipe de arrecadação e cadastro da Funpresp-Jud, servindo também como base de inteligência cadastral para auditorias e estudos atuariais da fundação.
+
+---
+
+## Equipe do Projeto
+
+| Nome | Função | Perfil Profissional |
+| :--- | :--- | :--- |
+| **Giovani Rocha** | Gerente / Coordenação Geral | [LinkedIn](https://br.linkedin.com/in/giovani-alves-da-rocha-4ab34b25) |
+| **André Machado** | Supervisor Técnico | [LinkedIn](https://www.linkedin.com/in/andr%C3%A9-carvalho-machado-10b40068/) |
+| **Marcos Marinho** | Desenvolvedor | [GitHub](https://github.com/devMarcosVM) &bull; [LinkedIn](https://www.linkedin.com/in/marcos-vieira-marinho/) |
+| **Marcelo Veras** | Desenvolvedor | [GitHub](https://github.com/marceloverass) &bull; [LinkedIn](https://www.linkedin.com/in/marceloveras) |
+| **Gabriel Delmondes** | Desenvolvedor | [GitHub](https://github.com/gabrieldelmondess) &bull; [LinkedIn](https://www.linkedin.com/in/gabriel-%C3%A2ngelo-delmondes-de-lima-b91541219/) |
+
+---
+
+<a href="../../" class="back-link">&larr; Voltar para o Início</a>

@@ -4,30 +4,67 @@ site_url: https://marceloverass.github.io/portfolio/
 theme:
   name: material
   language: pt-BR
-  favicon: assets/favicon.png  # Certifique-se de ter um ícone 32x32 na pasta assets
-  logo: assets/3x4e.png        # Pode usar sua própria foto como logo no header
+  favicon: assets/favicon.png
+  logo: assets/3x4e.png
   palette: 
-    - scheme: default           # Modo claro
-      primary: indigo           # Cor do header (combina com o BRB)
-      accent: blue
-    - scheme: slate             # Adiciona opção de modo escuro para o usuário
-      primary: indigo
-      accent: blue
+    - scheme: default
+      primary: slate
+      accent: indigo
+      toggle:
+        icon: material/weather-night
+        name: Mudar para modo escuro
+    - scheme: slate
+      primary: slate
+      accent: indigo
+      toggle:
+        icon: material/weather-sunny
+        name: Mudar para modo claro
+  font:
+    text: Inter
+    code: JetBrains Mono
   features:
-    - navigation.tabs           # Header mais limpo com abas horizontais
+    - navigation.tabs
     - navigation.sections
-    - navigation.top            # Botão "voltar ao topo" automático
+    - navigation.top
     - search.suggest
     - search.highlight
 
 nav:
-  - Home: index.md
+  - Início: index.md
   - Projetos:
-      - 📊 BI & Dashboards: 
+      - Desenvolvimento Web:
+          - Portal GTI: projetos/portal-gti.md
+      - Business Intelligence: 
+          - NUPEC 360º: projetos/nupec-360.md
           - Desenrola Brasil: projetos/desenrola-brasil.md
-      - 🐍 Python & Automação:
-          - Relatório Gerencial Auto: projetos/relatorio-gerencial.md
+      - Automação & Engenharia:
+          - Relatório Gerencial: projetos/relatorio-gerencial.md
           - Meu Querido Diário: projetos/meu-querido-diario.md
+      - DevOps & Cloud:
+          - DevOps Deploy (AWS): projetos/devops-deploy.md
+
+
+markdown_extensions:
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - admonition
+  - pymdownx.details
+
+extra_css:
+  - stylesheets/theme.css
+  - stylesheets/lightbox.css
+
+extra_javascript:
+  - javascripts/lightbox.js
 
 extra:
   social:

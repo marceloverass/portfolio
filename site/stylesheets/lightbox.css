@@ -1,0 +1,362 @@
+/* ============================================================
+   Lightbox & Comparativo de Relatórios — Minimalista Frio
+   ============================================================ */
+
+/* Cursor para imagens com capacidade de ampliação */
+article.md-content__inner img:not(.no-zoom) {
+  cursor: zoom-in;
+  transition: opacity 0.2s ease, transform 0.2s ease;
+}
+
+article.md-content__inner img:not(.no-zoom):hover {
+  opacity: 0.96;
+}
+
+/* Overlay principal do Lightbox */
+.custom-lightbox-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(8, 12, 20, 0.96);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  z-index: 99999;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.2s ease, visibility 0.2s ease;
+  user-select: none;
+}
+
+.custom-lightbox-overlay.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+/* Barra superior com título e controles */
+.custom-lightbox-header {
+  position: absolute;
+  top: 16px;
+  left: 20px;
+  right: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 100000;
+  color: #fff;
+}
+
+.custom-lightbox-title {
+  font-size: 0.88rem;
+  font-weight: 500;
+  color: #e2e8f0;
+  max-width: 60%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  background: rgba(30, 41, 59, 0.7);
+  padding: 6px 14px;
+  border-radius: 6px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.custom-lightbox-controls {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+.custom-lightbox-btn {
+  background: rgba(30, 41, 59, 0.8);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  color: #f1f5f9;
+  width: 36px;
+  height: 36px;
+  border-radius: 6px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.15s ease, border-color 0.15s ease;
+  outline: none;
+  text-decoration: none;
+}
+
+.custom-lightbox-btn:hover {
+  background: rgba(51, 65, 85, 0.95);
+  border-color: rgba(255, 255, 255, 0.3);
+  color: #ffffff;
+}
+
+.custom-lightbox-btn.close {
+  background: rgba(30, 41, 59, 0.8);
+  border-color: rgba(255, 255, 255, 0.15);
+  font-size: 1.1rem;
+}
+
+.custom-lightbox-btn.close:hover {
+  background: rgba(220, 38, 38, 0.8);
+  border-color: rgba(220, 38, 38, 0.9);
+}
+
+/* Área central da imagem */
+.custom-lightbox-content {
+  width: 92vw;
+  height: 82vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  cursor: grab;
+}
+
+.custom-lightbox-content.grabbing {
+  cursor: grabbing;
+}
+
+.custom-lightbox-img {
+  max-width: 92vw;
+  max-height: 82vh;
+  object-fit: contain;
+  border-radius: 4px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.6);
+  transition: transform 0.12s ease-out;
+  transform-origin: center center;
+}
+
+/* Rodapé informativo */
+.custom-lightbox-footer {
+  position: absolute;
+  bottom: 16px;
+  color: #94a3b8;
+  font-size: 0.8rem;
+  background: rgba(15, 23, 42, 0.8);
+  padding: 5px 14px;
+  border-radius: 6px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  pointer-events: none;
+}
+
+/* Botão de Documento no Lightbox */
+.custom-lightbox-btn.doc-btn {
+  width: auto !important;
+  padding: 0 14px !important;
+  font-size: 0.84rem !important;
+  font-weight: 500 !important;
+  gap: 6px !important;
+  background: #2563eb !important;
+  border-color: #1d4ed8 !important;
+}
+
+.custom-lightbox-btn.doc-btn:hover {
+  background: #1d4ed8 !important;
+}
+
+/* ============================================================
+   Comparativo Antes vs. Depois (Minimalista & Sem Poluição)
+   ============================================================ */
+
+.report-comparison-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+  gap: 24px;
+  margin: 24px 0 18px 0;
+}
+
+.report-card {
+  display: flex;
+  flex-direction: column;
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  padding: 22px;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+  position: relative;
+}
+
+[data-md-color-scheme="slate"] .report-card {
+  background: #0f172a;
+  border-color: rgba(255, 255, 255, 0.08);
+}
+
+.report-card:hover {
+  border-color: #cbd5e1;
+  box-shadow: 0 4px 16px rgba(15, 23, 42, 0.05);
+}
+
+[data-md-color-scheme="slate"] .report-card:hover {
+  border-color: rgba(255, 255, 255, 0.2);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+}
+
+.report-card-header {
+  margin-bottom: 12px;
+}
+
+.report-card-badge {
+  display: inline-block;
+  font-size: 0.74rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  padding: 3px 8px;
+  border-radius: 4px;
+  margin-bottom: 8px;
+}
+
+.report-card-badge--before {
+  background: #f1f5f9;
+  color: #475569;
+  border: 1px solid #e2e8f0;
+}
+
+[data-md-color-scheme="slate"] .report-card-badge--before {
+  background: #1e293b;
+  color: #94a3b8;
+  border-color: #334155;
+}
+
+.report-card-badge--after {
+  background: #eff6ff;
+  color: #1d4ed8;
+  border: 1px solid #bfdbfe;
+}
+
+[data-md-color-scheme="slate"] .report-card-badge--after {
+  background: rgba(37, 99, 235, 0.15);
+  color: #93c5fd;
+  border-color: rgba(37, 99, 235, 0.35);
+}
+
+.report-card-title {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin: 0 0 6px 0;
+  letter-spacing: -0.01em;
+  color: var(--md-default-fg-color, #0f172a);
+}
+
+.report-card-desc {
+  font-size: 0.88rem;
+  line-height: 1.55;
+  color: #64748b;
+  margin: 0;
+  min-height: 48px;
+}
+
+[data-md-color-scheme="slate"] .report-card-desc {
+  color: #94a3b8;
+}
+
+.report-card-image-wrap {
+  position: relative;
+  border-radius: 6px;
+  overflow: hidden;
+  margin: 14px 0 16px 0;
+  background: #f8fafc;
+  border: 1px solid #e2e8f0;
+}
+
+[data-md-color-scheme="slate"] .report-card-image-wrap {
+  background: #090e17;
+  border-color: rgba(255, 255, 255, 0.08);
+}
+
+.report-card-img {
+  width: 100%;
+  height: auto;
+  display: block;
+  cursor: zoom-in;
+  transition: opacity 0.2s ease;
+}
+
+.report-card-img:hover {
+  opacity: 0.94;
+}
+
+.report-card-actions {
+  margin-top: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.report-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  width: 100%;
+  padding: 10px 16px;
+  font-size: 0.88rem;
+  font-weight: 500;
+  text-decoration: none !important;
+  border-radius: 6px;
+  transition: background 0.15s ease, border-color 0.15s ease, color 0.15s ease;
+  cursor: pointer;
+  box-sizing: border-box;
+}
+
+.report-btn--secondary {
+  background: #f8fafc;
+  color: #334155 !important;
+  border: 1px solid #cbd5e1;
+}
+
+.report-btn--secondary:hover {
+  background: #f1f5f9;
+  color: #0f172a !important;
+  border-color: #94a3b8;
+}
+
+[data-md-color-scheme="slate"] .report-btn--secondary {
+  background: #1e293b;
+  color: #e2e8f0 !important;
+  border-color: #334155;
+}
+
+[data-md-color-scheme="slate"] .report-btn--secondary:hover {
+  background: #334155;
+  color: #ffffff !important;
+  border-color: #475569;
+}
+
+.report-btn--primary {
+  background: #0f172a;
+  color: #ffffff !important;
+  border: 1px solid #0f172a;
+}
+
+.report-btn--primary:hover {
+  background: #1e293b;
+  border-color: #1e293b;
+  color: #ffffff !important;
+}
+
+[data-md-color-scheme="slate"] .report-btn--primary {
+  background: #2563eb;
+  color: #ffffff !important;
+  border-color: #2563eb;
+}
+
+[data-md-color-scheme="slate"] .report-btn--primary:hover {
+  background: #1d4ed8;
+  border-color: #1d4ed8;
+}
+
+.report-helper-note {
+  font-size: 0.82rem;
+  color: #64748b;
+  margin-top: 12px;
+  text-align: center;
+}
+
+[data-md-color-scheme="slate"] .report-helper-note {
+  color: #94a3b8;
+}
